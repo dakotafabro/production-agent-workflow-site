@@ -121,7 +121,7 @@ export default function Home() {
           <p className="text-[var(--text-primary)] leading-relaxed">
             An agent is only as good as the context you give it. When your agent has access to
             your conventions, architecture knowledge, and verification habits, it becomes a
-            collaborator that works the way you already do.
+            more effective collaborator - one that is more likely to produce output aligned with how you already work. Your expertise still validates every result.
           </p>
         </div>
       </section>
@@ -275,7 +275,7 @@ export default function Home() {
           />
           <BenefitCard
             title="For Your Agent"
-            description="Encoded conventions mean the agent generates code that follows team patterns instead of inventing new ones."
+            description="Encoded conventions help the agent produce output more likely to follow team patterns instead of inventing new ones."
           />
           <BenefitCard
             title="For the Team"
