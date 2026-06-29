@@ -12,14 +12,14 @@ export default function Home() {
             Production Agent Workflow
           </p>
           <h1 className="text-3xl md:text-5xl font-light tracking-tight mb-6 leading-tight">
-            From Generated Code
+            Elevate How You Work
             <br />
-            <span className="text-[var(--text-secondary)]">to Production Code.</span>
+            <span className="text-[var(--text-secondary)]">With Your Agent.</span>
           </h1>
           <p className="text-base text-[var(--text-secondary)] w-full leading-relaxed">
-            A template for engineers and non-engineers moving from AI-generated code
-            to production-grade agent-assisted engineering. Small PRs. Passing CI.
-            Code your team can actually review.
+            A template for organizing your individual context and work style so your agent
+            can meet you where you are. You don&apos;t need to change your workflow. You&apos;re
+            equipping your agent to work the way you already do.
           </p>
         </div>
 
@@ -41,14 +41,14 @@ export default function Home() {
       <section className="max-w-4xl mx-auto px-6 py-16 border-t border-[var(--border)]">
         <div className="animate-fade-up">
           <p className="text-xs font-medium text-[var(--warning)] uppercase tracking-[0.2em] mb-4">
-            The Problem
+            The Opportunity
           </p>
           <h2 className="text-2xl md:text-3xl font-light tracking-tight mb-6">
-            Speed Without Structure
+            Your Agent Needs Your Context
           </h2>
           <p className="text-[var(--text-secondary)] leading-relaxed mb-8">
-            AI tools generate code fast. But speed without structure produces work that
-            slows down everyone else.
+            When an agent doesn&apos;t have access to your conventions, architecture knowledge,
+            and verification habits, common friction points emerge naturally.
           </p>
         </div>
 
@@ -76,9 +76,9 @@ export default function Home() {
         </div>
 
         <p className="text-sm text-[var(--text-muted)] mt-8 animate-fade-up delay-2">
-          The cost compounds. Every oversized PR creates review burden. Every CI failure
-          burns a cycle. Every merge conflict blocks the team. The agent moved fast, but
-          the team moved slower.
+          These aren&apos;t failures of the practitioner. They&apos;re the natural result of an agent
+          that doesn&apos;t have enough context about your codebase and workflow. This template
+          gives you a place to organize that context.
         </p>
       </section>
 
@@ -89,11 +89,11 @@ export default function Home() {
             The Shift
           </p>
           <h2 className="text-2xl md:text-3xl font-light tracking-tight mb-6">
-            Orient. Verify. Scope.
+            Organize Your Context. Elevate Your Output.
           </h2>
           <p className="text-[var(--text-secondary)] leading-relaxed mb-8">
-            The difference between generating code and shipping production code isn&apos;t the tool.
-            It&apos;s the structure around it.
+            You already know how you work best. This template helps you encode that knowledge
+            so your agent has access to it every session.
           </p>
         </div>
 
@@ -119,8 +119,9 @@ export default function Home() {
         <div className="mt-10 p-6 rounded-xl border border-[var(--accent-dim)] bg-[var(--accent-dim)] animate-fade-up delay-2">
           <p className="text-sm text-[var(--accent)] font-medium mb-2">The Core Insight</p>
           <p className="text-[var(--text-primary)] leading-relaxed">
-            An agent is only as good as the conventions you give it. Without a world model,
-            AI generates plausible code. With one, it is more likely to generate code that aligns to your expectations.
+            An agent is only as good as the context you give it. When your agent has access to
+            your conventions, architecture knowledge, and verification habits, it becomes a
+            collaborator that works the way you already do.
           </p>
         </div>
       </section>
@@ -176,10 +177,10 @@ export default function Home() {
             For Teams
           </p>
           <h2 className="text-2xl md:text-3xl font-light tracking-tight mb-6">
-            Individual Template. Collective Benefit.
+            Individual Context. Collective Benefit.
           </h2>
           <p className="text-[var(--text-secondary)] leading-relaxed mb-8">
-            When everyone on a team maintains their own conventions repo, the whole team moves faster.
+            When everyone on a team organizes their individual context, the whole team moves faster.
           </p>
         </div>
 
@@ -218,11 +219,11 @@ export default function Home() {
             What Production Looks Like
           </p>
           <h2 className="text-2xl md:text-3xl font-light tracking-tight mb-6">
-            Three Layers of Agent Configuration
+            Three Layers of Context
           </h2>
           <p className="text-[var(--text-secondary)] leading-relaxed mb-8">
-            A production agent workflow is built from three layers. Each one makes the agent
-            more effective in your specific codebase.
+            The template organizes your knowledge into three layers. Each one helps your agent
+            understand more about how you work and what your codebase expects.
           </p>
         </div>
 
@@ -261,9 +262,9 @@ export default function Home() {
             Convention Mining
           </h2>
           <p className="text-[var(--text-secondary)] leading-relaxed mb-8">
-            Every code review surfaces implicit team norms. Most of these live in people&apos;s
-            heads. Convention mining is the practice of capturing them as they appear so they
-            compound into a shared knowledge base.
+            Every code review teaches you something about how your team thinks about code.
+            Convention mining is the practice of capturing those insights as they appear so
+            they compound into your personal knowledge base - and your agent&apos;s.
           </p>
         </div>
 
@@ -360,7 +361,7 @@ export default function Home() {
             Get Started
           </p>
           <h2 className="text-2xl md:text-3xl font-light tracking-tight mb-6">
-            15 Minutes to Production Workflow
+            15 Minutes to a More Impactful Collaboration
           </h2>
         </div>
 
@@ -384,7 +385,7 @@ export default function Home() {
           <StepCard
             number="4"
             title="Start using it"
-            description="Point your agent at the repo. It reads AGENTS.md at session start and knows your conventions immediately. Over time, mine conventions from code reviews and watch the template compound."
+            description="Point your agent at the repo. It reads AGENTS.md at session start and knows your context immediately. Over time, mine conventions from code reviews and watch your collaboration deepen."
           />
         </div>
 
