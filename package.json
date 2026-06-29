@@ -11,17 +11,18 @@
     "build:external": "next build"
   },
   "dependencies": {
-    "next": "15.3.3",
+    "next": "15.1.12",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
+    "@eslint/eslintrc": "^3.3.5",
     "@tailwindcss/postcss": "^4",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
     "eslint": "^9",
-    "eslint-config-next": "15.3.3",
+    "eslint-config-next": "15.1.12",
     "tailwindcss": "^4",
     "typescript": "^5"
   }

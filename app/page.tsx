@@ -1,7 +1,5 @@
 "use client";
 
-const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
-
 export default function Home() {
   return (
     <main className="min-h-screen bg-[var(--bg)] text-[var(--text-primary)]">
