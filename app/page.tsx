@@ -101,8 +101,8 @@ export default function Home() {
           <table className="w-full text-sm border-collapse">
             <thead>
               <tr className="border-b border-[var(--border)]">
-                <th className="text-left py-3 pr-4 text-[var(--warning)] font-medium">Without Structure</th>
-                <th className="text-left py-3 pl-4 text-[var(--accent)] font-medium">With Structure</th>
+                <th className="text-left py-3 pr-4 text-[var(--warning)] font-medium">Without Your Context</th>
+                <th className="text-left py-3 pl-4 text-[var(--accent)] font-medium">With Your Context</th>
               </tr>
             </thead>
             <tbody className="text-[var(--text-secondary)]">
@@ -189,7 +189,7 @@ export default function Home() {
             <span className="text-[var(--accent)] mt-0.5">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="w-4 h-4"><polyline points="20 6 9 17 4 12"/></svg>
             </span>
-            <p className="text-sm text-[var(--text-secondary)]">PRs get smaller - the agent knows the scoping rules</p>
+            <p className="text-sm text-[var(--text-secondary)]">PRs get smaller - the agent knows the scoping norms</p>
           </div>
           <div className="flex gap-3 items-start">
             <span className="text-[var(--accent)] mt-0.5">
