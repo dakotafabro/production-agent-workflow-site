@@ -16,7 +16,7 @@ export default function Home() {
             <br />
             <span className="text-[var(--text-secondary)]">to Production Code.</span>
           </h1>
-          <p className="text-base text-[var(--text-secondary)] max-w-2xl leading-relaxed">
+          <p className="text-base text-[var(--text-secondary)] w-full leading-relaxed">
             A template for engineers and non-engineers moving from AI-generated code
             to production-grade agent-assisted engineering. Small PRs. Passing CI.
             Code your team can actually review.
@@ -120,8 +120,94 @@ export default function Home() {
           <p className="text-sm text-[var(--accent)] font-medium mb-2">The Core Insight</p>
           <p className="text-[var(--text-primary)] leading-relaxed">
             An agent is only as good as the conventions you give it. Without a world model,
-            AI generates plausible code. With one, it generates correct code.
+            AI generates plausible code. With one, it is more likely to generate code that aligns to your expectations.
           </p>
+        </div>
+      </section>
+
+      {/* ── WORKS WITH GOOSE ── */}
+      <section className="max-w-4xl mx-auto px-6 py-16 border-t border-[var(--border)]">
+        <div className="animate-fade-up">
+          <p className="text-xs font-medium text-[var(--accent)] uppercase tracking-[0.2em] mb-4">
+            Why This Works
+          </p>
+          <h2 className="text-2xl md:text-3xl font-light tracking-tight mb-6">
+            Built for Goose. Works With Any Agent.
+          </h2>
+          <p className="text-[var(--text-secondary)] leading-relaxed mb-8">
+            This template was developed using{" "}
+            <a href="https://github.com/block/goose" target="_blank" rel="noopener noreferrer" className="text-[var(--accent)] hover:underline">Goose</a>,
+            an open-source AI agent that reads AGENTS.md files at session start. The directory
+            structure maps directly to how Goose discovers and uses context.
+          </p>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 animate-fade-up delay-1">
+          <div className="p-5 rounded-xl bg-[var(--bg-card)] border border-[var(--border)]">
+            <p className="text-sm font-medium text-[var(--text-primary)] mb-2">How Goose uses it</p>
+            <ul className="space-y-1.5 text-xs text-[var(--text-secondary)]">
+              <li><span className="text-[var(--accent)] font-mono">AGENTS.md</span> - read at session start, shapes all behavior</li>
+              <li><span className="text-[var(--accent)] font-mono">conventions/</span> - consulted before generating code</li>
+              <li><span className="text-[var(--accent)] font-mono">pre-push-checklist</span> - executed before every push</li>
+              <li><span className="text-[var(--accent)] font-mono">workflow.md</span> - followed when building features</li>
+            </ul>
+          </div>
+          <div className="p-5 rounded-xl bg-[var(--bg-card)] border border-[var(--border)]">
+            <p className="text-sm font-medium text-[var(--text-primary)] mb-2">Works with other agents too</p>
+            <ul className="space-y-1.5 text-xs text-[var(--text-secondary)]">
+              <li><span className="text-[var(--text-muted)]">Cursor</span> - reads .cursorrules (same concept)</li>
+              <li><span className="text-[var(--text-muted)]">Copilot Workspace</span> - reads project context</li>
+              <li><span className="text-[var(--text-muted)]">Windsurf</span> - reads .windsurfrules</li>
+              <li><span className="text-[var(--text-muted)]">Aider</span> - reads project conventions</li>
+            </ul>
+          </div>
+        </div>
+
+        <p className="text-xs text-[var(--text-muted)] mt-6 animate-fade-up delay-2">
+          The conventions are agent-agnostic. The knowledge you encode (architecture, testing, PR workflow)
+          is useful regardless of which agent reads it.
+        </p>
+      </section>
+
+      {/* ── FOR TEAMS ── */}
+      <section className="max-w-4xl mx-auto px-6 py-16 border-t border-[var(--border)]">
+        <div className="animate-fade-up">
+          <p className="text-xs font-medium text-[var(--accent)] uppercase tracking-[0.2em] mb-4">
+            For Teams
+          </p>
+          <h2 className="text-2xl md:text-3xl font-light tracking-tight mb-6">
+            Individual Template. Collective Benefit.
+          </h2>
+          <p className="text-[var(--text-secondary)] leading-relaxed mb-8">
+            When everyone on a team maintains their own conventions repo, the whole team moves faster.
+          </p>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 animate-fade-up delay-1">
+          <div className="flex gap-3 items-start">
+            <span className="text-[var(--accent)] mt-0.5">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="w-4 h-4"><polyline points="20 6 9 17 4 12"/></svg>
+            </span>
+            <p className="text-sm text-[var(--text-secondary)]">PRs get smaller - the agent knows the scoping rules</p>
+          </div>
+          <div className="flex gap-3 items-start">
+            <span className="text-[var(--accent)] mt-0.5">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="w-4 h-4"><polyline points="20 6 9 17 4 12"/></svg>
+            </span>
+            <p className="text-sm text-[var(--text-secondary)]">CI passes on first push - the checklist runs locally</p>
+          </div>
+          <div className="flex gap-3 items-start">
+            <span className="text-[var(--accent)] mt-0.5">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="w-4 h-4"><polyline points="20 6 9 17 4 12"/></svg>
+            </span>
+            <p className="text-sm text-[var(--text-secondary)]">Reviews are faster - the code already follows team patterns</p>
+          </div>
+          <div className="flex gap-3 items-start">
+            <span className="text-[var(--accent)] mt-0.5">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="w-4 h-4"><polyline points="20 6 9 17 4 12"/></svg>
+            </span>
+            <p className="text-sm text-[var(--text-secondary)]">Onboarding accelerates - new engineers build their world model by mining reviews</p>
+          </div>
         </div>
       </section>
 
@@ -312,92 +398,6 @@ export default function Home() {
             <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
             Get the Template
           </a>
-        </div>
-      </section>
-
-      {/* ── WORKS WITH GOOSE ── */}
-      <section className="max-w-4xl mx-auto px-6 py-16 border-t border-[var(--border)]">
-        <div className="animate-fade-up">
-          <p className="text-xs font-medium text-[var(--accent)] uppercase tracking-[0.2em] mb-4">
-            Why This Works
-          </p>
-          <h2 className="text-2xl md:text-3xl font-light tracking-tight mb-6">
-            Built for Goose. Works With Any Agent.
-          </h2>
-          <p className="text-[var(--text-secondary)] leading-relaxed mb-8">
-            This template was developed using{" "}
-            <a href="https://github.com/block/goose" target="_blank" rel="noopener noreferrer" className="text-[var(--accent)] hover:underline">Goose</a>,
-            an open-source AI agent that reads AGENTS.md files at session start. The directory
-            structure maps directly to how Goose discovers and uses context.
-          </p>
-        </div>
-
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 animate-fade-up delay-1">
-          <div className="p-5 rounded-xl bg-[var(--bg-card)] border border-[var(--border)]">
-            <p className="text-sm font-medium text-[var(--text-primary)] mb-2">How Goose uses it</p>
-            <ul className="space-y-1.5 text-xs text-[var(--text-secondary)]">
-              <li><span className="text-[var(--accent)] font-mono">AGENTS.md</span> - read at session start, shapes all behavior</li>
-              <li><span className="text-[var(--accent)] font-mono">conventions/</span> - consulted before generating code</li>
-              <li><span className="text-[var(--accent)] font-mono">pre-push-checklist</span> - executed before every push</li>
-              <li><span className="text-[var(--accent)] font-mono">workflow.md</span> - followed when building features</li>
-            </ul>
-          </div>
-          <div className="p-5 rounded-xl bg-[var(--bg-card)] border border-[var(--border)]">
-            <p className="text-sm font-medium text-[var(--text-primary)] mb-2">Works with other agents too</p>
-            <ul className="space-y-1.5 text-xs text-[var(--text-secondary)]">
-              <li><span className="text-[var(--text-muted)]">Cursor</span> - reads .cursorrules (same concept)</li>
-              <li><span className="text-[var(--text-muted)]">Copilot Workspace</span> - reads project context</li>
-              <li><span className="text-[var(--text-muted)]">Windsurf</span> - reads .windsurfrules</li>
-              <li><span className="text-[var(--text-muted)]">Aider</span> - reads project conventions</li>
-            </ul>
-          </div>
-        </div>
-
-        <p className="text-xs text-[var(--text-muted)] mt-6 animate-fade-up delay-2">
-          The conventions are agent-agnostic. The knowledge you encode (architecture, testing, PR workflow)
-          is useful regardless of which agent reads it.
-        </p>
-      </section>
-
-      {/* ── FOR TEAMS ── */}
-      <section className="max-w-4xl mx-auto px-6 py-16 border-t border-[var(--border)]">
-        <div className="animate-fade-up">
-          <p className="text-xs font-medium text-[var(--accent)] uppercase tracking-[0.2em] mb-4">
-            For Teams
-          </p>
-          <h2 className="text-2xl md:text-3xl font-light tracking-tight mb-6">
-            Individual Template. Collective Benefit.
-          </h2>
-          <p className="text-[var(--text-secondary)] leading-relaxed mb-8">
-            When everyone on a team maintains their own conventions repo, the whole team moves faster.
-          </p>
-        </div>
-
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 animate-fade-up delay-1">
-          <div className="flex gap-3 items-start">
-            <span className="text-[var(--accent)] mt-0.5">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="w-4 h-4"><polyline points="20 6 9 17 4 12"/></svg>
-            </span>
-            <p className="text-sm text-[var(--text-secondary)]">PRs get smaller - the agent knows the scoping rules</p>
-          </div>
-          <div className="flex gap-3 items-start">
-            <span className="text-[var(--accent)] mt-0.5">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="w-4 h-4"><polyline points="20 6 9 17 4 12"/></svg>
-            </span>
-            <p className="text-sm text-[var(--text-secondary)]">CI passes on first push - the checklist runs locally</p>
-          </div>
-          <div className="flex gap-3 items-start">
-            <span className="text-[var(--accent)] mt-0.5">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="w-4 h-4"><polyline points="20 6 9 17 4 12"/></svg>
-            </span>
-            <p className="text-sm text-[var(--text-secondary)]">Reviews are faster - the code already follows team patterns</p>
-          </div>
-          <div className="flex gap-3 items-start">
-            <span className="text-[var(--accent)] mt-0.5">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="w-4 h-4"><polyline points="20 6 9 17 4 12"/></svg>
-            </span>
-            <p className="text-sm text-[var(--text-secondary)]">Onboarding accelerates - new engineers build their world model by mining reviews</p>
-          </div>
         </div>
       </section>
 
