@@ -12,9 +12,9 @@ export default function Home() {
             Production Agent Workflow
           </p>
           <h1 className="text-3xl md:text-5xl font-light tracking-tight mb-6 leading-tight">
-            Stop Vibe Coding.
+            From Generated Code
             <br />
-            <span className="text-[var(--text-secondary)]">Start Shipping.</span>
+            <span className="text-[var(--text-secondary)]">to Production Code.</span>
           </h1>
           <p className="text-base text-[var(--text-secondary)] max-w-2xl leading-relaxed">
             A template for engineers and non-engineers moving from AI-generated code
@@ -33,12 +33,7 @@ export default function Home() {
             <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
             Get the Template
           </a>
-          <a
-            href="#the-shift"
-            className="inline-flex items-center gap-2 px-6 py-3 border border-[var(--border)] text-[var(--text-secondary)] font-medium rounded-lg hover:border-[var(--border-hover)] hover:text-[var(--text-primary)] transition-all"
-          >
-            Learn More
-          </a>
+
         </div>
       </section>
 
@@ -59,22 +54,22 @@ export default function Home() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 animate-fade-up delay-1">
           <ProblemCard
-            icon="📏"
+            icon={<IconExpand />}
             title="Large PRs"
             description="500+ lines, multiple concerns tangled together. Reviewers can't hold the full context. Reviews take hours instead of minutes."
           />
           <ProblemCard
-            icon="🔴"
+            icon={<IconCircleX />}
             title="Failing CI"
             description="Push, wait 15 minutes, see the failure, fix, push again. Each cycle burns time and blocks the team."
           />
           <ProblemCard
-            icon="⚔️"
+            icon={<IconGitMerge />}
             title="Merge Conflicts"
             description="Long-lived branches diverge from main. The longer a branch lives, the more painful the merge."
           />
           <ProblemCard
-            icon="🤷"
+            icon={<IconQuestion />}
             title="Code Nobody Understands"
             description="The agent generated it, the human committed it, but nobody can explain what it does or why."
           />
@@ -97,7 +92,7 @@ export default function Home() {
             Orient. Verify. Scope.
           </h2>
           <p className="text-[var(--text-secondary)] leading-relaxed mb-8">
-            The difference between vibe coding and production engineering isn&apos;t the tool.
+            The difference between generating code and shipping production code isn&apos;t the tool.
             It&apos;s the structure around it.
           </p>
         </div>
@@ -106,15 +101,15 @@ export default function Home() {
           <table className="w-full text-sm border-collapse">
             <thead>
               <tr className="border-b border-[var(--border)]">
-                <th className="text-left py-3 pr-4 text-[var(--warning)] font-medium">Vibe Coding</th>
-                <th className="text-left py-3 pl-4 text-[var(--accent)] font-medium">Production Engineering</th>
+                <th className="text-left py-3 pr-4 text-[var(--warning)] font-medium">Without Structure</th>
+                <th className="text-left py-3 pl-4 text-[var(--accent)] font-medium">With Structure</th>
               </tr>
             </thead>
             <tbody className="text-[var(--text-secondary)]">
               <ComparisonRow left="&quot;Generate a feature&quot;" right="Orient on existing patterns, then build one layer" />
               <ComparisonRow left="Push and see if CI passes" right="Run the pre-push checklist locally" />
               <ComparisonRow left="One big PR with everything" right="Stacked PRs, one concern each" />
-              <ComparisonRow left="Trust the AI output" right="Understand every line before committing" />
+              <ComparisonRow left="Trust the AI output blindly" right="Understand the full implementation before committing" />
               <ComparisonRow left="No conventions documented" right="Conventions encoded so the agent follows them" />
               <ComparisonRow left="Hope it works" right="Verify it works, then ship" />
             </tbody>
@@ -320,11 +315,19 @@ export default function Home() {
         <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
           <div>
             <p className="text-sm text-[var(--text-secondary)]">
-              Built by Dakota Fabro (they/them)
+              Built by Dakota Fabro, B.Psy, M.Ed, M.Th (they/them)
             </p>
             <p className="text-xs text-[var(--text-muted)] mt-1">
               AAIF Ambassador &middot; Agentic AI Foundation
             </p>
+            <div className="flex gap-3 mt-2">
+              <a href="https://github.com/dakotafabro" target="_blank" rel="noopener noreferrer" className="text-[var(--text-muted)] hover:text-[var(--accent)] transition-colors">
+                <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+              </a>
+              <a href="https://linkedin.com/in/dakotafabro" target="_blank" rel="noopener noreferrer" className="text-[var(--text-muted)] hover:text-[var(--accent)] transition-colors">
+                <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+              </a>
+            </div>
           </div>
           <div className="flex gap-4 text-xs text-[var(--text-muted)]">
             <a href="https://github.com/agentsmd" target="_blank" rel="noopener noreferrer" className="hover:text-[var(--accent)] transition-colors">
@@ -343,11 +346,43 @@ export default function Home() {
   );
 }
 
-function ProblemCard({ icon, title, description }: { icon: string; title: string; description: string }) {
+function IconExpand() {
+  return (
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-4 h-4">
+      <polyline points="15 3 21 3 21 9" /><polyline points="9 21 3 21 3 15" /><line x1="21" y1="3" x2="14" y2="10" /><line x1="3" y1="21" x2="10" y2="14" />
+    </svg>
+  );
+}
+
+function IconCircleX() {
+  return (
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-4 h-4">
+      <circle cx="12" cy="12" r="10" /><line x1="15" y1="9" x2="9" y2="15" /><line x1="9" y1="9" x2="15" y2="15" />
+    </svg>
+  );
+}
+
+function IconGitMerge() {
+  return (
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-4 h-4">
+      <circle cx="18" cy="18" r="3" /><circle cx="6" cy="6" r="3" /><path d="M6 21V9a9 9 0 0 0 9 9" />
+    </svg>
+  );
+}
+
+function IconQuestion() {
+  return (
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-4 h-4">
+      <circle cx="12" cy="12" r="10" /><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3" /><line x1="12" y1="17" x2="12.01" y2="17" />
+    </svg>
+  );
+}
+
+function ProblemCard({ icon, title, description }: { icon: React.ReactNode; title: string; description: string }) {
   return (
     <div className="p-5 rounded-xl bg-[var(--bg-card)] border border-[var(--border)] hover:border-[var(--border-hover)] transition-colors">
       <div className="flex items-center gap-3 mb-2">
-        <span className="text-lg">{icon}</span>
+        <span className="text-[var(--warning)] w-4 h-4 flex-shrink-0">{icon}</span>
         <h3 className="text-sm font-medium text-[var(--text-primary)]">{title}</h3>
       </div>
       <p className="text-xs text-[var(--text-muted)] leading-relaxed">{description}</p>
